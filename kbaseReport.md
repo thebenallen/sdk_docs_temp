@@ -23,9 +23,13 @@ The first step in setting up KBase reports for an App is determining what the ou
 To save space, an annotated copy of the master function is copied below:
 
 ```python
-def _generate_report (self, params, other_stuff): 
+def _generate_report (self, params, other_stuff):
+
+    # A working example of a method that generates report for DESEQ app
+    # https://github.com/kbaseapps/kb_deseq/blob/586714d/lib/kb_deseq/Utils/DESeqUtil.py#L241-L285
+    
     report_params = {
-         #message is a string that appears in the summary section of the result page
+         #message is an optional field. It is string that appears in the summary section of the result page
          #eg. message = “This is a message string”
 
          'message': message_in_app,
@@ -39,6 +43,8 @@ def _generate_report (self, params, other_stuff):
          #objects_created_in_app = list()
          #objects_created_in_app.append(obj1)
          #objects_created_in_app.append(obj2)
+         # See a working example here
+         # https://github.com/kbaseapps/kb_deseq/blob/586714d/lib/kb_deseq/Utils/DESeqUtil.py#L262-L264
 
          'objects_created': objects_created_in_app,
 
@@ -64,6 +70,9 @@ def _generate_report (self, params, other_stuff):
          #      ‘label’: ‘label of file’,
          #      ‘description’ : ‘Description of file’
          #  }
+         
+         # To see a working example
+         # https://github.com/kbaseapps/kb_deseq/blob/586714d/lib/kb_deseq/Utils/DESeqUtil.py#L205-L239
 
 
 
@@ -88,6 +97,10 @@ def _generate_report (self, params, other_stuff):
          #    ‘label’: ‘label of html file1’,
          #    ‘description’ : ‘Description of html file1’
          # }
+         
+         # To see a working example 
+         # https://github.com/kbaseapps/kb_deseq/blob/586714d/lib/kb_deseq/Utils/DESeqUtil.py#L86-L194
+         
 
          'html_links': html_files_in_app,
          'direct_html_link_index': 0,
