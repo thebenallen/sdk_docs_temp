@@ -120,3 +120,5 @@ def _generate_report (self, params, other_stuff):
   }
   ```
 A more typical and feature rich example can be found in KBase's implementation of [DESeq2](https://github.com/kbaseapps/kb_deseq/blob/586714d/lib/kb_deseq/Utils/DESeqUtil.py#L262-L264). 
+
+![DESeq2 Report Example](http://kbase.us/wp-content/uploads/2017/11/DESeq2-Report.png)
