@@ -6,7 +6,7 @@ The KBaseReports module is the preferred way to communicate results to users. Th
 case where a string is displayed to the user (supplied in the 'text_message' field) along with links to new objects 
 created by the app (supplied in the 'objects_created' field). However this module also contains functionality to create 
 and display HTML webpages and serve files directly for user download. A more typical and feature rich example can be
-found in KBase's implementation of [Ballgown](https://github.com/kbaseapps/kb_ballgown/blob/1b77c87/lib/kb_ballgown/core/ballgown_util.py#L66-L167)
+found in KBase's implementation of [Deseq](https://github.com/kbaseapps/kb_deseq/blob/add70f879a93f060c2b37de914dab7d0c02731c1/lib/kb_deseq/Utils/DESeqUtil.py#L241-L285
 
 The KBaseReport module allows the creation of KBase reports which can present text, HTML, and downloadable files to the user as output to your app. 
 
@@ -25,8 +25,6 @@ To save space, an annotated copy of the master function is copied below:
 ```python
 def _generate_report (self, params, other_stuff):
 
-    # A working example of a method that generates report for DESEQ app
-    # https://github.com/kbaseapps/kb_deseq/blob/586714d/lib/kb_deseq/Utils/DESeqUtil.py#L241-L285
     
     report_params = {
          #message is an optional field. It is string that appears in the summary section of the result page
